@@ -1043,6 +1043,80 @@ button {
 
 
 /* =====================================================
+   HOBBIES / WHEN I'M NOT CODING
+===================================================== */
+
+.hobbies {
+    background: var(--sky-pale);
+}
+
+.hobbies-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.hobby-card {
+    padding: 35px 25px;
+
+    background: white;
+
+    border-radius: 8px;
+
+    transition: var(--transition);
+
+    border:
+        1px solid
+        transparent;
+}
+
+.hobby-card:hover {
+    transform: translateY(-10px);
+
+    border-color: var(--sky);
+
+    box-shadow:
+        0 20px 40px
+        rgba(12, 35, 64, 0.08);
+}
+
+.hobby-card h3 {
+    color: var(--navy);
+
+    font-size: 18px;
+
+    margin-bottom: 15px;
+}
+
+.hobby-card p {
+    color: var(--gray);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+.hobby-link {
+    color: var(--sky);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    transition: var(--transition);
+}
+
+.hobby-link:hover {
+    color: var(--navy);
+}
+
+
+/* =====================================================
    EDUCATION
 ===================================================== */
 
@@ -1446,6 +1520,12 @@ footer {
     }
 
 
+    .hobbies-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
     .about-grid {
         grid-template-columns: 1fr;
 
@@ -1575,6 +1655,13 @@ footer {
     /* SKILLS */
 
     .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* HOBBIES */
+
+    .hobbies-grid {
         grid-template-columns: 1fr;
     }
 
